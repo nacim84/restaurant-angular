@@ -15,6 +15,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import {ServerComponent} from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 const routes = [
   {path: '', component: AuthenticationComponent},           // http://localhost:4200
@@ -34,7 +36,9 @@ const routes = [
     ContactComponent,
     AuthenticationComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,
