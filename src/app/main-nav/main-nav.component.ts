@@ -10,6 +10,9 @@ import { map } from 'rxjs/operators';
 })
 export class MainNavComponent {
 
+  menu = 'Menu';
+  my_restaurant = 'My Restaurant';
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
